@@ -11,4 +11,4 @@ RUN apt-get install -y openjdk-17-jdk
 ENV JAVA_HOME /usr/lib/jvm/java-17-openjdk-amd64/
 
 # copy the jar file
-COPY ./Calculator/target/*.jar /app/
+COPY ./SPE/target/*.jar /app/
