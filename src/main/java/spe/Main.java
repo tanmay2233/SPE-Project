@@ -6,9 +6,9 @@ import org.apache.logging.log4j.Logger;
 import java.util.Scanner;
 import java.math.BigDecimal;
 
-public class ScientificCalculator {
+public class Main {
 
-    private static final Logger logger = LogManager.getLogger(ScientificCalculator.class); 
+    private static final Logger logger = LogManager.getLogger(Main.class); 
 
     public static String squareRoot(double x) {
         if (x < 0) {
