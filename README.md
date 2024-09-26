@@ -66,15 +66,20 @@ Ngrok is used to expose the locally running Docker container to the internet. Th
 
 ```plaintext
 ScientificCalculator/
+├── Deployment/
+│   ├── deploy.yml      # Ansible playbook for deployment
+│   ├── inventory       # Defines the localhost user
 ├── src/
 │   ├── main/
 │   │   └── java/
-│   │       └── org/example/Main.java
+│   │       └── spe/
+│   │            └── Main.java  # Conatains the Calculator logic
 │   └── test/
-│       └── java/
+│   │   └── java/
+│   │       └── ScientificCalculatorTest.java   # Contains the JUnit code for testing
+├── target/
+│       └── Calculator-1.0-SNAPSHOT-jar-with-dependencies.jar   # jar file to be executed in the docker conatiner
 ├── pom.xml              # Maven configuration file
 ├── Dockerfile           # Docker configuration file
-├── Jenkinsfile          # Jenkins pipeline configuration
-├── ansible/
-│   └── playbook.yml     # Ansible playbook for deployment
+├── Jenkinsfile          # Jenkins pipeline configuration 
 └── README.md            # Project documentation
