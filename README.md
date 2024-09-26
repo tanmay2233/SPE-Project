@@ -1,1 +1,1 @@
-#### Scientific Calculator Project - DevOps Pipeline
+# Scientific Calculator Project - DevOps Pipeline
