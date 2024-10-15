@@ -4,7 +4,7 @@ pipeline{
     }
     agent any
     stages{
-        stage('Stage 1: Git Clone'){
+        stage('Stage 1: Git'){
             steps{
                 git branch: 'master', 
                 url:'https://github.com/tanmay2233/SPE-Project.git'
