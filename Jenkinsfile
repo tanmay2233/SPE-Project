@@ -4,7 +4,7 @@ pipeline{
     }
     agent any
     stages{
-        stage('Stage 1: Git'){
+        stage('Stage 1: Fetch from GitHub'){
             steps{
                 git branch: 'master', 
                 url:'https://github.com/tanmay2233/SPE-Project.git'
